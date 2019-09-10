@@ -21,7 +21,7 @@ static String [] Credentials;
 
 	public void readData() throws Exception {
 		//Create new instance from File class to store file path
-		File src = new File (".\\TestData1.xlsx");
+		File src = new File (".\\TestData\\TestData1.xlsx");
 		//Create new instance from FileInputStream to read from file
 		FileInputStream fis = new FileInputStream(src);
 		
