@@ -4,7 +4,6 @@
   <artifactId>SeleniumWithJava</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>SeleniumWithJava</name>
-  <description>	</description>
   <dependencies>
   
 	   <dependency>
