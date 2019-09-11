@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import utilities.TestBase;
@@ -35,6 +37,7 @@ public class Facility extends TestBase
     By HealthSysID = By.xpath("//input[@id='HealthSystemOrgID']");
     By AnchorProduct = By.xpath("//label[contains(text(),'Alaris')]");
     By saveBtn = By.xpath("//button[@id='SaveHealthSystemOrg']");
+    By idnComplete = By.xpath("//body[@class='modal-open']/app/div[@id='main-wrapper']/ng-component[@class='ng-star-inserted']/modal/div[@class='modal fade in show']/div[@class='modal-dialog modal-lg']/div[@class='modal-content']/div[@class='modal-body']/form[@id='FormHealthSystemOrg']/div[@class='row']/div[2]");
     By ActAs = By.xpath("//input[@id='ActingAsDropdown']");
     By IdnValidation = By.xpath("(//div[@class='bd-title']/span)[1]");
     By facility = By.xpath("//span[contains(text(),'Regions and Facilities')]");
@@ -105,6 +108,8 @@ public class Facility extends TestBase
         driver.findElement(HealthSysID).sendKeys(IDNID);
         driver.findElement(AnchorProduct).click();
         driver.findElement(saveBtn).click();
+        WebDriverWait wait = new WebDriverWait(driver,30);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(idnComplete));
     }
 
     /****************************************************************************************************
@@ -162,7 +167,8 @@ public class Facility extends TestBase
         driver.findElement(SaveFacility).click();
     	waitUntilPageLoad();
         driver.findElement(facilitySearch).sendKeys(FacilityName);
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
+        waitUntilPageLoad();
         Assert.assertEquals(driver.findElement(FacilityValidation).getText(), FacilityName);
     }	
 

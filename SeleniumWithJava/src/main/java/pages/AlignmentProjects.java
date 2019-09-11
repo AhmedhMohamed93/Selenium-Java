@@ -126,7 +126,8 @@ public class AlignmentProjects extends TestBase
         driver.findElement(SaveAlignmentProject).click();
     	waitUntilPageLoad();
         driver.findElement(AlignmentSearch).sendKeys(AlignmentprojectName);
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
+        waitUntilPageLoad();
         Assert.assertEquals(driver.findElement(AlignmentProjectValidation).getText(), AlignmentprojectName);
     }	
 }

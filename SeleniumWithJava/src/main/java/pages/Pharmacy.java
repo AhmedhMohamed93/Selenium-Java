@@ -106,7 +106,8 @@ public class Pharmacy extends TestBase
         driver.findElement(SavePF).click();
     	waitUntilPageLoad();
         driver.findElement(PharmacySearch).sendKeys(PFName);
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
+        waitUntilPageLoad();
         Assert.assertEquals(driver.findElement(PharmacyValidation).getText(), PFName);
     }	
 
