@@ -1,0 +1,5 @@
+ControlFocus("Open","","Edit1")
+Sleep(3000)
+ControlSetText("Open","","Edit1","C:\Users\ahmed.mohamed\eclipse-workspace\POC.seleniumWithJava\Needed Files\SC IV SET-Original.xls")
+Sleep(3000)
+ControlClick("Open","","Button1")

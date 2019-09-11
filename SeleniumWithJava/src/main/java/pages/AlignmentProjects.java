@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import utilities.TestBase;
@@ -108,16 +110,18 @@ public class AlignmentProjects extends TestBase
         driver.findElement(AlignmentProjectName).sendKeys(AlignmentprojectName);
         driver.findElement(EMRFormualry).click();
         driver.findElement(EMRFormualry).sendKeys(EMRformualry);
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.elementToBeClickable(Facility));
         driver.findElement(Facility).click();
         driver.findElement(UploadGRE).click();
         /* Ulpoad GRE File */
-        Runtime.getRuntime().exec("C:\\Users\\ahmed.mohamed\\Documents\\GitHub\\Selenium-Java\\POC.seleniumWithJava\\Needed Files\\GRE.exe");
+        Runtime.getRuntime().exec("C:\\Users\\ahmed.mohamed\\Documents\\GitHub\\Selenium-Java\\SeleniumWithJava\\Needed Files\\GRE.exe");
         waituntillfinshUpload(UploadSucessfully);
         driver.findElement(EMRItems).click();
         driver.findElement(EMRItemsSelect).click();
         driver.findElement(UploadEMR).click();
         /* Upload EMR Items */
-        Runtime.getRuntime().exec("C:\\Users\\ahmed.mohamed\\Documents\\GitHub\\Selenium-Java\\POC.seleniumWithJava\\Needed Files\\IVFile.exe");
+        Runtime.getRuntime().exec("C:\\Users\\ahmed.mohamed\\Documents\\GitHub\\Selenium-Java\\SeleniumWithJava\\Needed Files\\IVFile.exe");
         //waituntillfinshUpload(UploadSucessfully);
         driver.findElement(SaveAlignmentProject).click();
     	waitUntilPageLoad();

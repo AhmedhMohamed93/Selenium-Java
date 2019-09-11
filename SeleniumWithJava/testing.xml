@@ -7,7 +7,7 @@
 	<classes>
 			<class name="test.ValidateLoginAndLaunch">
 				<methods>
-					<include name="BD_ValidateLaunchWebsite"/>
+					<exclude name="BD_ValidateLaunchWebsite"/>
 					<exclude name="BD_LoginSuccessfully"/>
 				</methods>
 			</class>
@@ -32,7 +32,7 @@
 
 			<class name="test.ValidateCreateAlignmentProject">
 				<methods>
-					<exclude name="BD_ValidateCreationOfNewAlignmentProject"/>
+					<include name="BD_ValidateCreationOfNewAlignmentProject"/>
 				</methods>
 			</class>			
 		
