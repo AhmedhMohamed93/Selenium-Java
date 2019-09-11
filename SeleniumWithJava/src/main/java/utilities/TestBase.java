@@ -101,13 +101,32 @@ public class TestBase
 		 
 	 }
 	 
+     /****************************************************************************************************
+      *                                                                                                  *
+      *   Method Name : waituntillPageUpload()                                                           *
+      *   Inputs      : void                                                                             *
+      *   Outputs     : void                                                                             *
+      *   Description : This Method is to wait until ajax loader finish loading the page                 *
+      *                                                                                                  *
+      ****************************************************************************************************/
+	 
 	 public void waitUntilPageLoad() throws Throwable
 	 {
 		 WebDriverWait wait = new WebDriverWait(driver, 300);
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(WaitCondition));
 	 }
 	 
-	 public void waituntillfinshUpload(By element)
+
+     /****************************************************************************************************
+      *                                                                                                  *
+      *   Method Name : waituntillfinshUpload()                                                          *
+      *   Inputs      : By element                                                                       *
+      *   Outputs     : void                                                                             *
+      *   Description : This Method is to wait until finishing upload GRE file ans also IV File          *
+      *                                                                                                  *
+      ****************************************************************************************************/	 
+	 
+	 public void waituntillfinishUpload(By element)
 	 {
 		 WebDriverWait wait = new WebDriverWait(driver, 30000);
 		 wait.until(ExpectedConditions.presenceOfElementLocated(element));
@@ -115,7 +134,14 @@ public class TestBase
 	 }
 	 
 	 
-
+     /****************************************************************************************************
+      *                                                                                                  *
+      *   Method Name : getInstance()                                                                    *
+      *   Inputs      : void                                                                             *
+      *   Outputs     : ExtentReport Object                                                              *
+      *   Description : This Method is to Handle multiple Extent Report objects                          *
+      *                                                                                                  *
+      ****************************************************************************************************/
 
      public static ExtentReports getInstance()
      {

@@ -116,13 +116,13 @@ public class AlignmentProjects extends TestBase
         driver.findElement(UploadGRE).click();
         /* Ulpoad GRE File */
         Runtime.getRuntime().exec("C:\\Users\\ahmed.mohamed\\Documents\\GitHub\\Selenium-Java\\SeleniumWithJava\\Needed Files\\GRE.exe");
-        waituntillfinshUpload(UploadSucessfully);
+        waituntillfinishUpload(UploadSucessfully);
         driver.findElement(EMRItems).click();
         driver.findElement(EMRItemsSelect).click();
         driver.findElement(UploadEMR).click();
         /* Upload EMR Items */
         Runtime.getRuntime().exec("C:\\Users\\ahmed.mohamed\\Documents\\GitHub\\Selenium-Java\\SeleniumWithJava\\Needed Files\\IVFile.exe");
-        //waituntillfinshUpload(UploadSucessfully);
+        waituntillfinishUpload(UploadSucessfully);
         driver.findElement(SaveAlignmentProject).click();
     	waitUntilPageLoad();
         driver.findElement(AlignmentSearch).sendKeys(AlignmentprojectName);
