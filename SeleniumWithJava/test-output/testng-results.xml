@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="13" total="14" passed="0">
+<testng-results skipped="0" failed="0" ignored="13" total="14" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="55506" started-at="2019-09-12T12:10:52 EET" finished-at="2019-09-12T12:11:48 EET">
+  <suite name="Suite" duration-ms="114219" started-at="2019-09-12T12:23:22 EET" finished-at="2019-09-12T12:25:16 EET">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="55506" started-at="2019-09-12T12:10:52 EET" finished-at="2019-09-12T12:11:48 EET">
+    <test name="Test1" duration-ms="114219" started-at="2019-09-12T12:23:22 EET" finished-at="2019-09-12T12:25:16 EET">
       <class name="test.ValidateLoginAndLaunch">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:test.ValidateLoginAndLaunch@536aaa8d]" name="setupTest" is-config="true" duration-ms="85" started-at="2019-09-12T12:10:52 EET" finished-at="2019-09-12T12:10:52 EET">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:test.ValidateLoginAndLaunch@536aaa8d]" name="setupTest" is-config="true" duration-ms="90" started-at="2019-09-12T12:23:22 EET" finished-at="2019-09-12T12:23:22 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:test.ValidateLoginAndLaunch@536aaa8d]" name="endReport" is-config="true" duration-ms="195" started-at="2019-09-12T12:11:47 EET" finished-at="2019-09-12T12:11:48 EET">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:test.ValidateLoginAndLaunch@536aaa8d]" name="endReport" is-config="true" duration-ms="165" started-at="2019-09-12T12:25:16 EET" finished-at="2019-09-12T12:25:16 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- test.ValidateLoginAndLaunch -->
       <class name="test.ValidateCreateAlignmentProject">
-        <test-method status="FAIL" signature="BD_ValidateCreationOfNewAlignmentProject(java.lang.String)[pri:0, instance:test.ValidateCreateAlignmentProject@e320068]" name="BD_ValidateCreationOfNewAlignmentProject" duration-ms="55196" started-at="2019-09-12T12:10:52 EET" finished-at="2019-09-12T12:11:47 EET">
+        <test-method status="PASS" signature="BD_ValidateCreationOfNewAlignmentProject(java.lang.String)[pri:0, instance:test.ValidateCreateAlignmentProject@e320068]" name="BD_ValidateCreationOfNewAlignmentProject" duration-ms="113940" started-at="2019-09-12T12:23:22 EET" finished-at="2019-09-12T12:25:16 EET">
           <params>
             <param index="0">
               <value>
@@ -25,62 +25,14 @@
               </value>
             </param>
           </params>
-          <exception class="java.io.IOException">
-            <message>
-              <![CDATA[Cannot run program "GRE.exe": CreateProcess error=2, The system cannot find the file specified]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.IOException: Cannot run program "GRE.exe": CreateProcess error=2, The system cannot find the file specified
-at java.lang.ProcessBuilder.start(Unknown Source)
-at java.lang.Runtime.exec(Unknown Source)
-at java.lang.Runtime.exec(Unknown Source)
-at java.lang.Runtime.exec(Unknown Source)
-at pages.AlignmentProjects.CreateNewPharmacyAlignmentProject(AlignmentProjects.java:119)
-at test.ValidateCreateAlignmentProject.BD_ValidateCreationOfNewAlignmentProject(ValidateCreateAlignmentProject.java:50)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
-at java.lang.ProcessImpl.create(Native Method)
-at java.lang.ProcessImpl.<init>(Unknown Source)
-at java.lang.ProcessImpl.start(Unknown Source)
-... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.IOException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BD_ValidateCreationOfNewAlignmentProject -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateCreateAlignmentProject@e320068]" name="getResult" is-config="true" duration-ms="4" started-at="2019-09-12T12:11:47 EET" finished-at="2019-09-12T12:11:47 EET">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateCreateAlignmentProject@e320068]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-12T12:25:16 EET" finished-at="2019-09-12T12:25:16 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=BD_ValidateCreationOfNewAlignmentProject status=FAILURE method=ValidateCreateAlignmentProject.BD_ValidateCreationOfNewAlignmentProject(java.lang.String)[pri:0, instance:test.ValidateCreateAlignmentProject@e320068] output={null}]]]>
+                <![CDATA[[TestResult name=BD_ValidateCreationOfNewAlignmentProject status=SUCCESS method=ValidateCreateAlignmentProject.BD_ValidateCreationOfNewAlignmentProject(java.lang.String)[pri:0, instance:test.ValidateCreateAlignmentProject@e320068] output={null}]]]>
               </value>
             </param>
           </params>
