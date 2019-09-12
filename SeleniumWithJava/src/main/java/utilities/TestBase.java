@@ -149,7 +149,7 @@ public class TestBase
          {
              extent = new ExtentReports(System.getProperty("user.dir") +"/test-output/STMExtentReport.html", true);
              extent
-             .addSystemInfo("Environment", "Test A Server")
+             .addSystemInfo("Environment", "Stage Server DM Version 2.0")
              .addSystemInfo("User Name", "Ahmed Hamdy");
 
              extent.loadConfig(new File(System.getProperty("user.dir")+".\\Extent Configuration\\extent-config.xml"));

@@ -4,14 +4,14 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="test.ValidateCreateNewIDN">
+      <class name="test.ValidateCreateAlignmentProject">
         <methods>
           <include name="setupTest"/>
+          <include name="BD_ValidateCreationOfNewAlignmentProject" invocation-numbers="0"/>
           <include name="endReport"/>
-          <include name="BD_ValidateCreationOfNewHealthSystem" invocation-numbers="0"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- test.ValidateCreateNewIDN -->
+      </class> <!-- test.ValidateCreateAlignmentProject -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
