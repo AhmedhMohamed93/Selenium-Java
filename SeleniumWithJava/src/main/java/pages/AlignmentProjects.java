@@ -1,5 +1,10 @@
 package pages;
 
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -19,7 +24,6 @@ public class AlignmentProjects extends TestBase
      *                                                                                                  *
      ****************************************************************************************************/
 
-	
 
 
 
@@ -95,12 +99,12 @@ public class AlignmentProjects extends TestBase
      *                                                                                                  *
      *   Method Name : CreateNewPharmacyAlignmentProject()                                              *
      *   Inputs      : String Alignment Project Name                                                    *
-     *               : String Pharmacy Foprmualry Name                                                  *
+     *               : String Pharmacy Formulary Name                                                  *
      *   Outputs     : Void                                                                             *
      *   Description : This Method is to Fill all required fields in order to create Alignment Project  *
      *               : and upload GRE file and EMR Items                                                *
      *                                                                                                  *
-     * @throws Throwable 
+     * @throws Throwable 																				*
      ****************************************************************************************************/
 
     public void CreateNewPharmacyAlignmentProject(String AlignmentprojectName, String EMRformualry) throws Throwable
@@ -114,19 +118,63 @@ public class AlignmentProjects extends TestBase
         wait.until(ExpectedConditions.elementToBeClickable(Facility));
         driver.findElement(Facility).click();
         driver.findElement(UploadGRE).click();
-        /* Ulpoad GRE File */
-        Runtime.getRuntime().exec(".\\Needed Files\\GRE.exe");
+        
+        /****************************************************************************************************
+         *                						Upload GRE File                                             *
+         *   						Using Robot Class method to upload files                                *
+         ****************************************************************************************************/
+        Thread.sleep(2000);
+        StringSelection strSel = new StringSelection("C:\\Users\\ahmed.mohamed\\Documents\\GitHub\\Selenium-Java\\SeleniumWithJava\\Needed Files\\Infusion_Demo.gre");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(strSel, null);
+        Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_V);
+		Thread.sleep(3000);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		
+	    /****************************************************************************************************
+	     *                						Upload GRE File                                             *
+	     *           In order to use AutoIt method to upload files just uncomment the following line 		*
+	     *   		                    and comment the previous block                                      *
+	     ****************************************************************************************************/
+		
+        //Runtime.getRuntime().exec(".\\Needed Files\\GRE.exe");
+		
         waituntillfinishUpload(UploadSucessfully);
         driver.findElement(EMRItems).click();
         driver.findElement(EMRItemsSelect).click();
         driver.findElement(UploadEMR).click();
-        /* Upload EMR Items */
-        Runtime.getRuntime().exec(".\\Needed Files\\IVFile.exe");
+        
+        /****************************************************************************************************
+         *                						Upload IV File                                              *
+         *   						Using Robot Class method to upload files                                *
+         ****************************************************************************************************/
+        Thread.sleep(2000);
+        StringSelection strSel1 = new StringSelection("C:\\Users\\ahmed.mohamed\\Documents\\GitHub\\Selenium-Java\\SeleniumWithJava\\Needed Files\\SC IV SET-Original.xls");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(strSel1, null);
+        Robot robot1 = new Robot();
+		robot1.keyPress(KeyEvent.VK_CONTROL);
+		robot1.keyPress(KeyEvent.VK_V);
+		robot1.keyRelease(KeyEvent.VK_CONTROL);
+		robot1.keyRelease(KeyEvent.VK_V);
+		Thread.sleep(3000);
+		robot1.keyPress(KeyEvent.VK_ENTER);
+		robot1.keyRelease(KeyEvent.VK_ENTER);
+		
+	    /****************************************************************************************************
+	     *                						Upload GRE File                                             *
+	     *           In order to use AutoIt method to upload files just uncomment the following line 		*
+	     *   		                    and comment the previous block                                      *
+	     ****************************************************************************************************/
+		
+        //Runtime.getRuntime().exec(".\\Needed Files\\IVFile.exe");
         waituntillfinishUpload(UploadSucessfully);
         driver.findElement(SaveAlignmentProject).click();
     	waitUntilPageLoad();
         driver.findElement(AlignmentSearch).sendKeys(AlignmentprojectName);
-        //Thread.sleep(2000);
         waitUntilPageLoad();
         Assert.assertEquals(driver.findElement(AlignmentProjectValidation).getText(), AlignmentprojectName);
     }	
