@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="12" total="14" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="54354" started-at="2019-09-16T17:57:06 EET" finished-at="2019-09-16T17:58:01 EET">
+  <suite name="Suite" duration-ms="82992" started-at="2019-09-16T18:31:52 EET" finished-at="2019-09-16T18:33:15 EET">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="54354" started-at="2019-09-16T17:57:06 EET" finished-at="2019-09-16T17:58:01 EET">
+    <test name="Test1" duration-ms="82992" started-at="2019-09-16T18:31:52 EET" finished-at="2019-09-16T18:33:15 EET">
       <class name="test.ValidateLoginAndLaunch">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="setupTest" is-config="true" duration-ms="78" started-at="2019-09-16T17:57:06 EET" finished-at="2019-09-16T17:57:07 EET">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="setupTest" is-config="true" duration-ms="84" started-at="2019-09-16T18:31:52 EET" finished-at="2019-09-16T18:31:52 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="BD_ValidateLaunchWebsite(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="BD_ValidateLaunchWebsite" duration-ms="21888" started-at="2019-09-16T17:57:07 EET" finished-at="2019-09-16T17:57:28 EET">
+        <test-method status="PASS" signature="BD_ValidateLaunchWebsite(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="BD_ValidateLaunchWebsite" duration-ms="26144" started-at="2019-09-16T18:31:52 EET" finished-at="2019-09-16T18:32:18 EET">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BD_ValidateLaunchWebsite -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-16T17:57:28 EET" finished-at="2019-09-16T17:57:28 EET">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-16T18:32:18 EET" finished-at="2019-09-16T18:32:18 EET">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="BD_LoginSuccessfully(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="BD_LoginSuccessfully" duration-ms="32217" started-at="2019-09-16T17:57:28 EET" finished-at="2019-09-16T17:58:01 EET">
+        <test-method status="PASS" signature="BD_LoginSuccessfully(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="BD_LoginSuccessfully" duration-ms="56593" started-at="2019-09-16T18:32:18 EET" finished-at="2019-09-16T18:33:15 EET">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BD_LoginSuccessfully -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-16T17:58:01 EET" finished-at="2019-09-16T17:58:01 EET">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T18:33:15 EET" finished-at="2019-09-16T18:33:15 EET">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="endReport" is-config="true" duration-ms="146" started-at="2019-09-16T17:58:01 EET" finished-at="2019-09-16T17:58:01 EET">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="endReport" is-config="true" duration-ms="147" started-at="2019-09-16T18:33:15 EET" finished-at="2019-09-16T18:33:15 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

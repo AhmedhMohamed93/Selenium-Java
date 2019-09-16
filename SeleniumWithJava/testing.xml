@@ -14,25 +14,25 @@
 	 
 			<class name="test.ValidateCreateNewIDN">
 				<methods>
-					<exclude name="BD_ValidateCreationOfNewHealthSystem"/>
+					<include name="BD_ValidateCreationOfNewHealthSystem"/>
 				</methods>
 			</class> 
 	
 			<class name="test.ValidateCreateNewfacility">
 				<methods>
-					<exclude name="BD_ValidateCreationOfNewFacility"/>
+					<include name="BD_ValidateCreationOfNewFacility"/>
 				</methods>
 			</class>
 
 			<class name="test.ValidateCreateNewPF">
 				<methods>
-					<exclude name="BD_ValidateCreationOfNewPharmacyFormualry"/>
+					<include name="BD_ValidateCreationOfNewPharmacyFormualry"/>
 				</methods>
 			</class>
 
 			<class name="test.ValidateCreateAlignmentProject">
 				<methods>
-					<exclude name="BD_ValidateCreationOfNewAlignmentProject"/>
+					<include name="BD_ValidateCreationOfNewAlignmentProject"/>
 				</methods>
 			</class>			
 		
