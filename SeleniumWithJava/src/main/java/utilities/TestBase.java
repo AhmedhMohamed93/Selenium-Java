@@ -92,6 +92,7 @@ public class TestBase
  			System.setProperty(dataDriven.getExplorerDriver(),dataDriven.getExplorerProperty());
  			//create Internet Explorer instance
  			driver = new InternetExplorerDriver();
+ 			
  		}
  		else
  		{
