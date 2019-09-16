@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]">
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test1(failed)">
     <classes>
@@ -12,6 +12,30 @@
           <include name="getResult"/>
         </methods>
       </class> <!-- test.ValidateCreateAlignmentProject -->
+      <class name="test.ValidateCreateNewfacility">
+        <methods>
+          <include name="setupTest"/>
+          <include name="endReport"/>
+          <include name="BD_ValidateCreationOfNewFacility" invocation-numbers="0"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- test.ValidateCreateNewfacility -->
+      <class name="test.ValidateCreateNewIDN">
+        <methods>
+          <include name="setupTest"/>
+          <include name="endReport"/>
+          <include name="BD_ValidateCreationOfNewHealthSystem" invocation-numbers="0"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- test.ValidateCreateNewIDN -->
+      <class name="test.ValidateCreateNewPF">
+        <methods>
+          <include name="setupTest"/>
+          <include name="endReport"/>
+          <include name="getResult"/>
+          <include name="BD_ValidateCreationOfNewPharmacyFormualry" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.ValidateCreateNewPF -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
