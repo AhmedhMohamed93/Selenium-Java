@@ -1,65 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="12" total="14" passed="2">
+<testng-results skipped="0" failed="0" ignored="13" total="14" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="82992" started-at="2019-09-16T18:31:52 EET" finished-at="2019-09-16T18:33:15 EET">
+  <suite name="Suite" duration-ms="138324" started-at="2019-09-23T12:12:25 EET" finished-at="2019-09-23T12:14:43 EET">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="82992" started-at="2019-09-16T18:31:52 EET" finished-at="2019-09-16T18:33:15 EET">
+    <test name="Test1" duration-ms="138324" started-at="2019-09-23T12:12:25 EET" finished-at="2019-09-23T12:14:43 EET">
       <class name="test.ValidateLoginAndLaunch">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="setupTest" is-config="true" duration-ms="84" started-at="2019-09-16T18:31:52 EET" finished-at="2019-09-16T18:31:52 EET">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:test.ValidateLoginAndLaunch@2d8f65a4]" name="setupTest" is-config="true" duration-ms="80" started-at="2019-09-23T12:12:25 EET" finished-at="2019-09-23T12:12:25 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="BD_ValidateLaunchWebsite(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="BD_ValidateLaunchWebsite" duration-ms="26144" started-at="2019-09-16T18:31:52 EET" finished-at="2019-09-16T18:32:18 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BD_ValidateLaunchWebsite -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-16T18:32:18 EET" finished-at="2019-09-16T18:32:18 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BD_ValidateLaunchWebsite status=SUCCESS method=ValidateLoginAndLaunch.BD_ValidateLaunchWebsite(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="BD_LoginSuccessfully(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="BD_LoginSuccessfully" duration-ms="56593" started-at="2019-09-16T18:32:18 EET" finished-at="2019-09-16T18:33:15 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BD_LoginSuccessfully -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T18:33:15 EET" finished-at="2019-09-16T18:33:15 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BD_LoginSuccessfully status=SUCCESS method=ValidateLoginAndLaunch.BD_LoginSuccessfully(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:test.ValidateLoginAndLaunch@33f88ab]" name="endReport" is-config="true" duration-ms="147" started-at="2019-09-16T18:33:15 EET" finished-at="2019-09-16T18:33:15 EET">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:test.ValidateLoginAndLaunch@2d8f65a4]" name="endReport" is-config="true" duration-ms="158" started-at="2019-09-23T12:14:43 EET" finished-at="2019-09-23T12:14:43 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- test.ValidateLoginAndLaunch -->
+      <class name="test.ValidateCreateAlignmentProject">
+        <test-method status="PASS" signature="BD_ValidateCreationOfNewAlignmentProject(java.lang.String)[pri:0, instance:test.ValidateCreateAlignmentProject@1b68ddbd]" name="BD_ValidateCreationOfNewAlignmentProject" duration-ms="138064" started-at="2019-09-23T12:12:25 EET" finished-at="2019-09-23T12:14:43 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BD_ValidateCreationOfNewAlignmentProject -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateCreateAlignmentProject@1b68ddbd]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-23T12:14:43 EET" finished-at="2019-09-23T12:14:43 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BD_ValidateCreationOfNewAlignmentProject status=SUCCESS method=ValidateCreateAlignmentProject.BD_ValidateCreationOfNewAlignmentProject(java.lang.String)[pri:0, instance:test.ValidateCreateAlignmentProject@1b68ddbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- test.ValidateCreateAlignmentProject -->
     </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -5,7 +5,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
@@ -71,28 +74,35 @@ public class TestBase
 
 	 }
 	 
-	 public void setup(String browser) throws Exception
+	 @SuppressWarnings({ "deprecation", "static-access" })
+	public void setup(String browser) throws Exception
 	 {
  		// Call readData function from ReadExcel to import data from Excel sheet
  		dataDriven.readData();
  		getInstance();
  		//Check if parameter passed as 'chrome'
- 		if(browser.equalsIgnoreCase("chrome")){
- 			//set path to chromedriver.exe
+ 		if(browser.equalsIgnoreCase("chrome"))
+ 		{
  			System.setProperty(dataDriven.getChromeDriver(),dataDriven.getChromeProperty());
- 			//create chrome instance
  			driver = new ChromeDriver();
  			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
  			driver.manage().window().maximize();
  		}
- 		//Check if parameter passed as 'IE'
+ 		
+ 		else if(browser.equalsIgnoreCase("Firefox"))
+ 		{
+ 			System.setProperty(dataDriven.getFirefoxDriver(),dataDriven.getFirefoxProperty());
+ 			driver = new FirefoxDriver();
+ 			driver.manage().window().maximize();
+ 		}
+ 		
  		else if(browser.equalsIgnoreCase("IE"))
  		{
- 			//set path to IE Driver Server.exe
+ 			DesiredCapabilities cap = new DesiredCapabilities().internetExplorer();
+ 			cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
  			System.setProperty(dataDriven.getExplorerDriver(),dataDriven.getExplorerProperty());
- 			//create Internet Explorer instance
- 			driver = new InternetExplorerDriver();
- 			
+ 			driver = new InternetExplorerDriver(cap);
+ 			driver.manage().window().maximize();
  		}
  		else
  		{

@@ -8,7 +8,6 @@ import com.relevantcodes.extentreports.LogStatus;
 import pages.AlignmentProjects;
 import pages.BDHomePage;
 import pages.Facility;
-import pages.Pharmacy;
 import utilities.TestBase;
 import validationPackage.Validations;
 
@@ -19,7 +18,6 @@ public class ValidateCreateAlignmentProject extends TestBase
      *                               Declaration of classes Objects                                     *
      ****************************************************************************************************/
     Facility facility_1;
-    Pharmacy pharm_1;
     AlignmentProjects project_1;
     BDHomePage homePage;
     Validations validStrings = new Validations();	

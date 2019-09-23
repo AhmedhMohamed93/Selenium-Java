@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="ie"/>
   <test thread-count="5" name="Test1(failed)">
     <classes>
       <class name="test.ValidateLoginAndLaunch">
@@ -9,8 +9,7 @@
           <include name="setupTest"/>
           <include name="endReport"/>
           <include name="getResult"/>
-          <include name="BD_LoginSuccessfully"/>
-          <include name="BD_ValidateLaunchWebsite"/>
+          <include name="BD_LoginSuccessfully" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.ValidateLoginAndLaunch -->
     </classes>

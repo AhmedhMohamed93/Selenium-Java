@@ -30,7 +30,7 @@ static String [] Credentials;
 		//Initialize sheet object with the 1st sheet from the workbook object 
 		 sh = wb.getSheetAt(0);
 		 // Set array size = 13
-		configuration = new String [5];
+		configuration = new String [7];
 		Data = new String [8] ;
 		Credentials = new String [2];
 		
@@ -78,7 +78,17 @@ static String [] Credentials;
 	{
 		return configuration[3];
 	}
+	//
+	public String getFirefoxProperty()
+	{
+		return configuration[5];
+	}
 	
+	public String getFirefoxDriver()
+	{
+		return configuration[6];
+	}
+	//
 	public String getError()
 	{
 		return configuration[4];

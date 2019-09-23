@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import pages.AlignmentProjects;
 import pages.BDHomePage;
 import pages.Facility;
 import pages.Pharmacy;
@@ -20,7 +19,6 @@ public class ValidateCreateNewPF extends TestBase
      ****************************************************************************************************/
     Facility facility_1;
     Pharmacy pharm_1;
-    AlignmentProjects project_1;
     BDHomePage homePage;
     Validations validStrings = new Validations();
     /****************************************************************************************************
