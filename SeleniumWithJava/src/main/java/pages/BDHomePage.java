@@ -19,7 +19,6 @@ public class BDHomePage extends TestBase
      *                                                                                                  *
      ****************************************************************************************************/
 
-    String URL = "https://las-stage-a-2012.kp.cfnp.local/DataManager/#/Home";
 
 
 
