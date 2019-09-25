@@ -96,7 +96,7 @@ public class Facility extends TestBase
      *   Description : This Method is to Create new Health system and fill all required fields in the   *
      *               : displayed dialog                                                                 *
      *                                                                                                  *
-     * @throws Throwable 
+     * @throws Throwable 																				*
      ****************************************************************************************************/
     public void CreateNewIDN(String IDNName, String IDNID) throws Throwable 
     {
@@ -137,7 +137,7 @@ public class Facility extends TestBase
      *   Outputs     : Void                                                                             *
      *   Description : This Method is to navigate to "Facilities" ana Regions from "Admin" menu         *
      *                                                                                                  *
-     * @throws Throwable 
+     * @throws Throwable 																				*
      ****************************************************************************************************/
     public void NavigateToFacilityAndRegion() throws Throwable
     {
@@ -156,7 +156,7 @@ public class Facility extends TestBase
      *   Outputs     : Void                                                                             *
      *   Description : This Method is to Create new Facility and fill all required fields               *
      *                                                                                                  *
-     * @throws Throwable 
+     * @throws Throwable 																				*
      ****************************************************************************************************/
     public void CreateNewFacility(String FacilityName, String FacilityID) throws Throwable
     {

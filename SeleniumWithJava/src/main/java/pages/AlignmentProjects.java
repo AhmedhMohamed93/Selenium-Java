@@ -83,7 +83,7 @@ public class AlignmentProjects extends TestBase
      *   Outputs     : Void                                                                             *
      *   Description : This Method is to hover Over "Infusion" tab then navigate to "Alignment Project" *
      *                                                                                                  *
-     * @throws Throwable 
+     * @throws Throwable 																				*
      ****************************************************************************************************/
 
     public void NavigateToAlignmentProject() throws Throwable
@@ -99,7 +99,7 @@ public class AlignmentProjects extends TestBase
      *                                                                                                  *
      *   Method Name : CreateNewPharmacyAlignmentProject()                                              *
      *   Inputs      : String Alignment Project Name                                                    *
-     *               : String Pharmacy Formulary Name                                                  *
+     *               : String Pharmacy Formulary Name                                                   *
      *   Outputs     : Void                                                                             *
      *   Description : This Method is to Fill all required fields in order to create Alignment Project  *
      *               : and upload GRE file and EMR Items                                                *
@@ -171,6 +171,7 @@ public class AlignmentProjects extends TestBase
 	     ****************************************************************************************************/
 		
         //Runtime.getRuntime().exec(".\\Needed Files\\IVFile.exe");
+		
         waituntillfinishUpload(UploadSucessfully);
         driver.findElement(SaveAlignmentProject).click();
     	waitUntilPageLoad();

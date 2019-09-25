@@ -89,7 +89,7 @@ public class Pharmacy extends TestBase
      *   Description : This Method is to Create new Pharmacy Formulary and fill all required fields     *
      *               :  in the displayed dialog                                                         *
      *                                                                                                  *
-     * @throws Throwable 
+     * @throws Throwable 																				*
      ****************************************************************************************************/
     
     public void CreateNewPharmacyFormualry(String PFName, String PFID, String PFVendor, String FacilityName) throws Throwable
