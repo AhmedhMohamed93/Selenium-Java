@@ -43,7 +43,7 @@ public class TestBase
       *                                                                                                  *
 	  ****************************************************************************************************/	
 
-	 By WaitCondition = By.cssSelector("ajax-loader > div.loadingplaceholder");
+	 private By WaitCondition = By.cssSelector("ajax-loader > div.loadingplaceholder");
 
 	 
      /****************************************************************************************************

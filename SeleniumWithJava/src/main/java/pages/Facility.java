@@ -30,23 +30,23 @@ public class Facility extends TestBase
      *                                                                                                  *
      ****************************************************************************************************/
 
-    By adminMenu = By.xpath("//a[@class='px-3'][contains(text(),'Admin')]");
-    By healthSystemDropDown = By.xpath("//span[contains(text(),'Health Systems')]");
-    By newHealthSystem = By.xpath("//button[@id='NewHealthSystemOrg']");
-    By HealthSysName = By.xpath("//input[@id='HealthSystemOrgName']");
-    By HealthSysID = By.xpath("//input[@id='HealthSystemOrgID']");
-    By AnchorProduct = By.xpath("//label[contains(text(),'Alaris')]");
-    By saveBtn = By.xpath("//button[@id='SaveHealthSystemOrg']");
-    By idnComplete = By.xpath("//body[@class='modal-open']/app/div[@id='main-wrapper']/ng-component[@class='ng-star-inserted']/modal/div[@class='modal fade in show']/div[@class='modal-dialog modal-lg']/div[@class='modal-content']/div[@class='modal-body']/form[@id='FormHealthSystemOrg']/div[@class='row']/div[2]");
-    By ActAs = By.xpath("//input[@id='ActingAsDropdown']");
-    By IdnValidation = By.xpath("(//div[@class='bd-title']/span)[1]");
-    By facility = By.xpath("//span[contains(text(),'Regions and Facilities')]");
-    By newFacility = By.xpath("//button[@id='NewRegionFacility']");
-    By facilityName = By.xpath("//input[@id='FacilityName']");
-    By facilityID = By.xpath("//input[@id='FacilityUniqueId']");
-    By SaveFacility = By.xpath("//button[@id='SaveFacilityRegion']");
-    By facilitySearch = By.xpath("//input[@id='SearchRegionFacility']");
-    By FacilityValidation = By.xpath("//td[2]//ng2-smart-table-cell[1]//table-cell-view-mode[1]//div[1]//div[1]");
+	private By adminMenu = By.xpath("//a[@class='px-3'][contains(text(),'Admin')]");
+	private By healthSystemDropDown = By.xpath("//span[contains(text(),'Health Systems')]");
+	private By newHealthSystem = By.xpath("//button[@id='NewHealthSystemOrg']");
+	private By HealthSysName = By.xpath("//input[@id='HealthSystemOrgName']");
+	private By HealthSysID = By.xpath("//input[@id='HealthSystemOrgID']");
+	private By AnchorProduct = By.xpath("//label[contains(text(),'Alaris')]");
+	private By saveBtn = By.xpath("//button[@id='SaveHealthSystemOrg']");
+	private By idnComplete = By.xpath("//body[@class='modal-open']/app/div[@id='main-wrapper']/ng-component[@class='ng-star-inserted']/modal/div[@class='modal fade in show']/div[@class='modal-dialog modal-lg']/div[@class='modal-content']/div[@class='modal-body']/form[@id='FormHealthSystemOrg']/div[@class='row']/div[2]");
+	private By ActAs = By.xpath("//input[@id='ActingAsDropdown']");
+	private By IdnValidation = By.xpath("(//div[@class='bd-title']/span)[1]");
+	private By facility = By.xpath("//span[contains(text(),'Regions and Facilities')]");
+	private By newFacility = By.xpath("//button[@id='NewRegionFacility']");
+	private By facilityName = By.xpath("//input[@id='FacilityName']");
+	private By facilityID = By.xpath("//input[@id='FacilityUniqueId']");
+	private By SaveFacility = By.xpath("//button[@id='SaveFacilityRegion']");
+	private By facilitySearch = By.xpath("//input[@id='SearchRegionFacility']");
+	private By FacilityValidation = By.xpath("//td[2]//ng2-smart-table-cell[1]//table-cell-view-mode[1]//div[1]//div[1]");
 
 
     /****************************************************************************************************
@@ -167,7 +167,6 @@ public class Facility extends TestBase
         driver.findElement(SaveFacility).click();
     	waitUntilPageLoad();
         driver.findElement(facilitySearch).sendKeys(FacilityName);
-        //Thread.sleep(2000);
         waitUntilPageLoad();
         Assert.assertEquals(driver.findElement(FacilityValidation).getText(), FacilityName);
     }	

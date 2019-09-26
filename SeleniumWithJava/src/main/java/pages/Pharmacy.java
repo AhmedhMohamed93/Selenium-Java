@@ -27,17 +27,17 @@ public class Pharmacy extends TestBase
      *                                           Locators                                               *
      *                                                                                                  *
      ****************************************************************************************************/
-    By Formularies = By.xpath("//a[contains(text(),'Formularies')]");
-    By PharmacyFormualry = By.xpath("//span[contains(text(),'Pharmacy Formularies')]");
-    By NewPF = By.xpath("//button[@id='AddPharmacy']");
-    By PhFName = By.xpath("//input[@id='Name']");
-    By PhFID = By.xpath("//input[@id='ID']");
-    By Vendor = By.xpath("//div[@class='ng-star-inserted']//input[1]");
-    By associatedFacility = By.xpath("//div[@class='pharmacy-formulary-form-association-control double-margin-top double-padding-top']//input[1]");
-    By associatedFacilityAdd = By.xpath("//div[@class='pharmacy-formulary-form-association-control double-margin-top double-padding-top']//button[@id='bdassociationcontrol1-add']");
-    By SavePF = By.xpath("//button[@id='SaveDetailPharmacyFormulary']");
-    By PharmacySearch = By.xpath("//input[@id='SearchItem']");
-    By PharmacyValidation = By.xpath("//td[1]//ng2-smart-table-cell[1]//table-cell-view-mode[1]//div[1]//div[1]");
+	private By Formularies = By.xpath("//a[contains(text(),'Formularies')]");
+	private By PharmacyFormualry = By.xpath("//span[contains(text(),'Pharmacy Formularies')]");
+	private By NewPF = By.xpath("//button[@id='AddPharmacy']");
+	private By PhFName = By.xpath("//input[@id='Name']");
+	private By PhFID = By.xpath("//input[@id='ID']");
+	private By Vendor = By.xpath("//div[@class='ng-star-inserted']//input[1]");
+	private By associatedFacility = By.xpath("//div[@class='pharmacy-formulary-form-association-control double-margin-top double-padding-top']//input[1]");
+	private By associatedFacilityAdd = By.xpath("//div[@class='pharmacy-formulary-form-association-control double-margin-top double-padding-top']//button[@id='bdassociationcontrol1-add']");
+	private By SavePF = By.xpath("//button[@id='SaveDetailPharmacyFormulary']");
+	private By PharmacySearch = By.xpath("//input[@id='SearchItem']");
+	private By PharmacyValidation = By.xpath("//td[1]//ng2-smart-table-cell[1]//table-cell-view-mode[1]//div[1]//div[1]");
 
     /****************************************************************************************************
      *                                                                                                  *
@@ -106,7 +106,6 @@ public class Pharmacy extends TestBase
         driver.findElement(SavePF).click();
     	waitUntilPageLoad();
         driver.findElement(PharmacySearch).sendKeys(PFName);
-        //Thread.sleep(2000);
         waitUntilPageLoad();
         Assert.assertEquals(driver.findElement(PharmacyValidation).getText(), PFName);
     }	

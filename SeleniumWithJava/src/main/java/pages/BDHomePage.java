@@ -30,12 +30,12 @@ public class BDHomePage extends TestBase
      *                                                                                                  *
      ****************************************************************************************************/
 
-    By SigninBtn = By.xpath("//a[@id='anchorSignIn']");
-    By UserName = By.xpath("//input[@id='username']");
-    By UserPass = By.xpath("//input[@id='password']");
-    By LoginBtn = By.xpath("//button[@id='sign-in']");
-    By LaunchingValidation = By.xpath("//div[@class='item active']//img");
-    By loginNavigation = By.xpath("//a[@class='bdshell--user-info-widget--toggle px-3 bdshell--user-info-widget--username text-light dropdown-toggle text-truncate d-none d-lg-inline']");
+	private By SigninBtn = By.xpath("//a[@id='anchorSignIn']");
+	private By UserName = By.xpath("//input[@id='username']");
+	private By UserPass = By.xpath("//input[@id='password']");
+	private By LoginBtn = By.xpath("//button[@id='sign-in']");
+	private By LaunchingValidation = By.xpath("//div[@class='item active']//img");
+	private By loginNavigation = By.xpath("//a[@class='bdshell--user-info-widget--toggle px-3 bdshell--user-info-widget--username text-light dropdown-toggle text-truncate d-none d-lg-inline']");
 
 
 
