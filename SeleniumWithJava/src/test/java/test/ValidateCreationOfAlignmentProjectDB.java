@@ -36,9 +36,11 @@ public class ValidateCreationOfAlignmentProjectDB extends TestBase
     {
         logger = extent.startTest(validStrings.getconnectDB());
         
-        try {
+        try 
+        {
         	logger.log(LogStatus.INFO,validStrings.getconnecting());
-            try (Connection connection = DriverManager.getConnection(connectionUrl)) {
+            try (Connection connection = DriverManager.getConnection(connectionUrl)) 
+            {
             	logger.log(LogStatus.INFO,validStrings.getConnectDone());
             	logger.log(LogStatus.INFO,validStrings.getReadData());
             	String sql = "declare @name as nvarchar(255)\r\n" + 
@@ -48,10 +50,11 @@ public class ValidateCreationOfAlignmentProjectDB extends TestBase
             			"  FROM [EF].[SmartPumpAlignmentProject]\r\n" + 
             			"  where ProjectName = @name";
                 try (Statement statement = connection.createStatement();
-                        ResultSet resultSet = statement.executeQuery(sql)) {
-                    while (resultSet.next()) {
-                        System.out.println(
-                                resultSet.getString(2));
+                        ResultSet resultSet = statement.executeQuery(sql)) 
+                {
+                    while (resultSet.next()) 
+                    {
+                        System.out.println(resultSet.getString(2));
                         Assert.assertEquals(resultSet.getString(2),PName);
                     }
                 }
