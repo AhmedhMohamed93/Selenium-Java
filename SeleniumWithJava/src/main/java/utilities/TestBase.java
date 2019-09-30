@@ -35,6 +35,7 @@ public class TestBase
 	 protected static ExtentReports extent;
 	 protected ExtentTest logger;
 	 protected String URL = "https://las-stage-a-2012.kp.cfnp.local/DataManager/#/Home";
+	 protected String connectionUrl = "jdbc:sqlserver://SD-KP-TSASUP01.CFNP.LOCAL\\KP;databaseName=CommonFormulary;user=CommonFormularyAppUser;password=CommonFormularyAppUser";
 
 	 
 	 /****************************************************************************************************

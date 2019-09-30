@@ -57,14 +57,23 @@ public class Validations extends TestBase
 			    private String pharmacycreationStatus = "New Pharmacy Formualry is created successfully";
 			    
 		     /*************************************************************************************
-			  *              BD_ValidateCreationOfNewAlignmentProject() Test Log Strings           *
+			  *              BD_ValidateCreationOfNewAlignmentProject() Test Log Strings          *
 			  *************************************************************************************/
 			   
 			    private String CreateProjectStart = "Validation Of Create New Alignment Project";
 			    private String AlignmentNavigation = "System is navigated to Alignment Projects Page successfully";
 			    private String AlignmentcreationStatus = "New Alignment Project is created successfully";
 
-	
+			 /*************************************************************************************
+			  *            BD_ValidateCreationOfNewAlignmentProjectDB() Test Log Strings          *
+			  *************************************************************************************/
+			    
+			    private String DBConnect = "Initiate the Connection to SQL Server";
+			    private String connecting = "Connecting to SQL Server ... ";
+			    private String connectComplete = "Done.";
+			    private String ReadData = "Reading data from table";
+			    private String closeDB = "All done.";
+			    
 		/****************************************************************************************************
 		 *                                                                                                  *
 		 *                                           Methods                                                *
@@ -205,6 +214,35 @@ public class Validations extends TestBase
 				    {
 				        return AlignmentNavigation;
 				    }	
-
+				    
+				    
+				/******************************************************************************************
+				 *               BD_ValidateCreationOfNewAlignmentProjectDB() Test Logs getters           *
+				 ******************************************************************************************/
+				    
+				    public String getconnectDB()
+				    {
+				        return DBConnect;
+				    }
+				    
+				    public String getconnecting()
+				    {
+				        return connecting;
+				    }
+				    
+				    public String getConnectDone()
+				    {
+				        return connectComplete;
+				    }
+				    
+				    public String getReadData()
+				    {
+				        return ReadData;
+				    }
+				    
+				    public String getCloseDataBase()
+				    {
+				        return closeDB;
+				    }
 }
 
