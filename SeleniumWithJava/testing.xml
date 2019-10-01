@@ -3,37 +3,37 @@
 <suite name="Suite">
   <!-- Set browser parameter (ie = internet explorer, chrome = Google chrome -->
   <parameter name="browser" value="chrome" />
-  <parameter name="ProjectName" value="Epic101_AP002" />
+  <parameter name="ProjectName" value="Project3333" />
   <test thread-count="5" name="Test1">
 	<classes>
 			<class name="test.ValidateLoginAndLaunch">
 				<methods>
-					<include name="BD_ValidateLaunchWebsite"/>
-					<include name="BD_LoginSuccessfully"/>
+					<exclude name="BD_ValidateLaunchWebsite"/>
+					<exclude name="BD_LoginSuccessfully"/>
 				</methods>
 			</class>
 	 
 			<class name="test.ValidateCreateNewIDN">
 				<methods>
-					<include name="BD_ValidateCreationOfNewHealthSystem"/>
+					<exclude name="BD_ValidateCreationOfNewHealthSystem"/>
 				</methods>
 			</class> 
 	
 			<class name="test.ValidateCreateNewfacility">
 				<methods>
-					<include name="BD_ValidateCreationOfNewFacility"/>
+					<exclude name="BD_ValidateCreationOfNewFacility"/>
 				</methods>
 			</class>
 
 			<class name="test.ValidateCreateNewPF">
 				<methods>
-					<include name="BD_ValidateCreationOfNewPharmacyFormualry"/>
+					<exclude name="BD_ValidateCreationOfNewPharmacyFormualry"/>
 				</methods>
 			</class>
 
 			<class name="test.ValidateCreateAlignmentProject">
 				<methods>
-					<include name="BD_ValidateCreationOfNewAlignmentProject"/>
+					<exclude name="BD_ValidateCreationOfNewAlignmentProject"/>
 				</methods>
 			</class>	
 			

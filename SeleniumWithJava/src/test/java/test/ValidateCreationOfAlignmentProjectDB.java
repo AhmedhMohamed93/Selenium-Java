@@ -34,6 +34,7 @@ public class ValidateCreationOfAlignmentProjectDB extends TestBase
     @Parameters("ProjectName")
     public void BD_ValidateCreationOfNewAlignmentProjectDB(String PName) throws Throwable
     {
+        logger = extent.startTest(validStrings.GetStartDBValidation());
         logger = extent.startTest(validStrings.getconnectDB());
         
         try 
@@ -44,7 +45,7 @@ public class ValidateCreationOfAlignmentProjectDB extends TestBase
             	logger.log(LogStatus.INFO,validStrings.getConnectDone());
             	logger.log(LogStatus.INFO,validStrings.getReadData());
             	String sql = "declare @name as nvarchar(255)\r\n" + 
-            			"set @name = 'Epic101_AP002'\r\n" + 
+            			"set @name = 'Project3333'\r\n" + 
             			"\r\n" + 
             			"SELECT *\r\n" + 
             			"  FROM [EF].[SmartPumpAlignmentProject]\r\n" + 

@@ -67,7 +67,7 @@ public class Validations extends TestBase
 			 /*************************************************************************************
 			  *            BD_ValidateCreationOfNewAlignmentProjectDB() Test Log Strings          *
 			  *************************************************************************************/
-			    
+                private String DBvalidationStart = "Validation of Existance of the Created Alignment Project in the DB";
 			    private String DBConnect = "Initiate the Connection to SQL Server";
 			    private String connecting = "Connecting to SQL Server ... ";
 			    private String connectComplete = "Done.";
@@ -220,6 +220,11 @@ public class Validations extends TestBase
 				 *               BD_ValidateCreationOfNewAlignmentProjectDB() Test Logs getters           *
 				 ******************************************************************************************/
 				    
+                    public String GetStartDBValidation()
+                    {
+                        return DBvalidationStart ;
+                    }
+                    
 				    public String getconnectDB()
 				    {
 				        return DBConnect;

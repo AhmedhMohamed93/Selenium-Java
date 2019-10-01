@@ -42,6 +42,7 @@ public class AlignmentProjects extends TestBase
     private By NewalignmentProjectBtn = By.xpath("//button[@id='AddAlignmentProject']");
     private By AlignmentProjectName = By.xpath("//input[@id='Name']");
     private By EMRFormualry = By.xpath("//div[@class='col-md-5']//bddropdown[@name='autoCompleteControls[0].Name']//input[1]");
+    private By EMRSelector = By.xpath("//a[@id = 'listItemEMRFormularyList1']");
     private By Facility = By.xpath("//div[@class= 'checkbox']/label");
     private By UploadGRE = By.xpath("//label[@class='btn btn-default']");
     private By EMRItems = By.xpath("//div[@class='col-md-4 IvLabel']//input[1]");
@@ -112,8 +113,10 @@ public class AlignmentProjects extends TestBase
     	waitUntilPageLoad();
         driver.findElement(NewalignmentProjectBtn).click();
         driver.findElement(AlignmentProjectName).sendKeys(AlignmentprojectName);
-        driver.findElement(EMRFormualry).click();
+        //driver.FindElement(EMRFormualry).Click();
+        //Thread.Sleep(1500);
         driver.findElement(EMRFormualry).sendKeys(EMRformualry);
+        driver.findElement(EMRSelector).click();
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.elementToBeClickable(Facility));
         driver.findElement(Facility).click();
