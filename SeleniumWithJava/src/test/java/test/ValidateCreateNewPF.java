@@ -47,6 +47,9 @@ public class ValidateCreateNewPF extends TestBase
         logger.log(LogStatus.INFO, validStrings.getpharmacyNavigation());
         pharm_1.CreateNewPharmacyFormualry(dataDriven.getPharmacyFormularyName(), dataDriven.getPharmacyFormularyID(), dataDriven.getPFvendor(), dataDriven.getFacilityName());
         logger.log(LogStatus.INFO, validStrings.getpharmacycreationStatus());
+        captureScreenshot(driver,validStrings.getPFscreenshotName() , new Throwable().getStackTrace()[0].getMethodName());
+        logger.log(LogStatus.INFO, validStrings.getconfirmScreenshot());
+
     }
 
 }

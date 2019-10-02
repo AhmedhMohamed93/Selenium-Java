@@ -44,6 +44,8 @@ public class ValidateCreateNewIDN extends TestBase
         logger.log(LogStatus.INFO, validStrings.getsuccessfulCreationOfIDN());
         facility_1.ImpersonateIDN(dataDriven.getIDNName());
         logger.log(LogStatus.INFO, validStrings.getCreationStatus());
+        captureScreenshot(driver,validStrings.getIDNscreenshotName() , new Throwable().getStackTrace()[0].getMethodName());
+        logger.log(LogStatus.INFO, validStrings.getconfirmScreenshot());
 
     }
     

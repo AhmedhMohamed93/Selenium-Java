@@ -14,25 +14,25 @@ public class Validations extends TestBase
               /*************************************************************************************
                *                 BD_ValidateLaunchWebsite() Test Log Strings                       *
                *************************************************************************************/
-	
+				private String LaunchScreenshot = "Launching successfully the BD Website";
 				private String launchStart = "Validation Of Launching BD Website";
 				private String Navigation = "System Navigating now";
 				private String LaunchStatus = "System Navigated successfully";
+				private String screenshot = "ScreenShot Taken";
 	
 	
 		     /*************************************************************************************
 		      *                 BD_LoginSuccessfully() Test Log Strings                           *
 		      *************************************************************************************/
-
+				private String LoginScreenshot = "Login successfully to BD Website";
 			    private String loginStart = "Validation Of Login successfully to BD Website";
 			    private String Logging = "System is Logging in now";
 			    private String loginstatus = "System logged in successfully";
-				
-
-    
+				  
 			 /*************************************************************************************
 			  *             BD_ValidateCreationOfNewHealthSystem() Test Log Strings               *
 		      *************************************************************************************/  
+			    private String IDNScreenshot = "IDN Created successfully";
 			    private String CreateIDNStart = "Validation Of Create New HealthSystem";
 			    private String Launching = "System is navigated to BD website and logged in successfully";
 			    private String IDNNavigation = "System is navigated Health Systems Page";
@@ -42,7 +42,7 @@ public class Validations extends TestBase
 			 /*************************************************************************************
 			  *             BD_ValidateCreationOfNewHealthSystem() Test Log Strings               *
 			  *************************************************************************************/    
-    
+			    private String FacilityScreenshot = "New Facility Created successfully";
 			    private String CreateFacilityStart = "Validation Of Create New Facility";
 			    private String facilityNavigation = "System is navigated to Regions and Facilities successfully";
 			    private String facilitycreationStatus = "New Facility is created successfully";
@@ -51,7 +51,7 @@ public class Validations extends TestBase
 			 /*************************************************************************************
 			  *             BD_ValidateCreationOfNewPharmacyFormualry() Test Log Strings          *
 			  *************************************************************************************/  
-			    
+			    private String PharmacyScreenshot = "New PF Created successfully";
 			    private String CreatePharmacyStart = "Validation Of Create New Pharmacy Formulary";
 			    private String pharmacyNavigation = "System is navigated to Pharmacy Formularies Page successfully";
 			    private String pharmacycreationStatus = "New Pharmacy Formualry is created successfully";
@@ -59,7 +59,7 @@ public class Validations extends TestBase
 		     /*************************************************************************************
 			  *              BD_ValidateCreationOfNewAlignmentProject() Test Log Strings          *
 			  *************************************************************************************/
-			   
+			    private String AlignmentScreenshot = "New AlignmentProject Created successfully";
 			    private String CreateProjectStart = "Validation Of Create New Alignment Project";
 			    private String AlignmentNavigation = "System is navigated to Alignment Projects Page successfully";
 			    private String AlignmentcreationStatus = "New Alignment Project is created successfully";
@@ -99,7 +99,16 @@ public class Validations extends TestBase
 				        return LaunchStatus;
 				    }
 
-
+				    public String getLaunchscreenshotName()
+				    {
+				        return LaunchScreenshot;
+				    }
+				    
+				    
+				    public String getconfirmScreenshot()
+				    {
+				        return screenshot;
+				    }
 
 	          /******************************************************************************************
 	           *                BD_LoginSuccessfully() Test Logs getters                                *
@@ -120,9 +129,13 @@ public class Validations extends TestBase
 				        return loginstatus;
 				    }
 
-
+				    public String getLoginscreenshotName()
+				    {
+				        return LoginScreenshot;
+				    }
+				    
 			  /******************************************************************************************
-			   *                BD_LoginSuccessfully() Test Logs getters                                *
+			   *                BD_CreateNewIDN() Test Logs getters                                     *
 			   ******************************************************************************************/
 
 				    public String getCreateIDNStart()
@@ -149,8 +162,12 @@ public class Validations extends TestBase
 				    {
 				        return CreationStatus;
 				    }
-
-
+				    
+				    public String getIDNscreenshotName()
+				    {
+				        return IDNScreenshot;
+				    }
+				    
 			  /******************************************************************************************
 			   *                    BD_ValidateCreationOfNewFacility() Test Logs getters                *
 			   ******************************************************************************************/
@@ -175,6 +192,10 @@ public class Validations extends TestBase
 				        return facilitycreationStatus;
 				    }
 
+				    public String getFacilityscreenshotName()
+				    {
+				        return FacilityScreenshot;
+				    }
 
 			  /******************************************************************************************
 			   *                 BD_ValidateCreationOfNewPharmacyFormualry() Test Logs getters          *
@@ -193,6 +214,11 @@ public class Validations extends TestBase
 				    public String getpharmacyNavigation()
 				    {
 				        return pharmacyNavigation;
+				    }
+				    
+				    public String getPFscreenshotName()
+				    {
+				        return PharmacyScreenshot;
 				    }
 
  
@@ -215,6 +241,10 @@ public class Validations extends TestBase
 				        return AlignmentNavigation;
 				    }	
 				    
+				    public String getAlignmentscreenshotName()
+				    {
+				        return AlignmentScreenshot;
+				    }
 				    
 				/******************************************************************************************
 				 *               BD_ValidateCreationOfNewAlignmentProjectDB() Test Logs getters           *

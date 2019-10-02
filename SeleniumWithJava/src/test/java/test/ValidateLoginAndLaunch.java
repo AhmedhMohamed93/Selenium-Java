@@ -37,6 +37,9 @@ public class ValidateLoginAndLaunch extends TestBase
         logger.log(LogStatus.INFO, validStrings.getnavigationString());
         homePage.ValidateLaunchingPageSucessfully();
         logger.log(LogStatus.INFO, validStrings.getlaunchStatus());
+        captureScreenshot(driver,validStrings.getLaunchscreenshotName() , new Throwable().getStackTrace()[0].getMethodName());
+        logger.log(LogStatus.INFO, validStrings.getconfirmScreenshot());
+
     }
     
     
@@ -61,7 +64,8 @@ public class ValidateLoginAndLaunch extends TestBase
         logger.log(LogStatus.INFO, validStrings.getlogging());
         homePage.ValidateLoginPageNavigation();
         logger.log(LogStatus.INFO,validStrings.getloginStatus());
-
+        captureScreenshot(driver, validStrings.getLoginscreenshotName() , new Throwable().getStackTrace()[0].getMethodName());
+        logger.log(LogStatus.INFO, validStrings.getconfirmScreenshot());
     }    
     
 

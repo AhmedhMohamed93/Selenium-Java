@@ -1,45 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="16" total="17" passed="1">
+<testng-results skipped="0" failed="0" ignored="15" total="17" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2297" started-at="2019-10-01T10:26:08 EET" finished-at="2019-10-01T10:26:11 EET">
+  <suite name="Suite" duration-ms="76140" started-at="2019-10-02T15:36:19 EET" finished-at="2019-10-02T15:37:35 EET">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="2297" started-at="2019-10-01T10:26:08 EET" finished-at="2019-10-01T10:26:11 EET">
+    <test name="Test1" duration-ms="76140" started-at="2019-10-02T15:36:19 EET" finished-at="2019-10-02T15:37:35 EET">
       <class name="test.ValidateLoginAndLaunch">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:test.ValidateLoginAndLaunch@59e5ddf]" name="setupTest" is-config="true" duration-ms="98" started-at="2019-10-01T10:26:08 EET" finished-at="2019-10-01T10:26:08 EET">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="setupTest" is-config="true" duration-ms="93" started-at="2019-10-02T15:36:19 EET" finished-at="2019-10-02T15:36:19 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:test.ValidateLoginAndLaunch@59e5ddf]" name="endReport" is-config="true" duration-ms="173" started-at="2019-10-01T10:26:10 EET" finished-at="2019-10-01T10:26:11 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- test.ValidateLoginAndLaunch -->
-      <class name="test.ValidateCreationOfAlignmentProjectDB">
-        <test-method status="PASS" signature="BD_ValidateCreationOfNewAlignmentProjectDB(java.lang.String)[pri:0, instance:test.ValidateCreationOfAlignmentProjectDB@536aaa8d]" name="BD_ValidateCreationOfNewAlignmentProjectDB" duration-ms="1998" started-at="2019-10-01T10:26:08 EET" finished-at="2019-10-01T10:26:10 EET">
+        <test-method status="PASS" signature="BD_ValidateLaunchWebsite(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="BD_ValidateLaunchWebsite" duration-ms="29416" started-at="2019-10-02T15:36:19 EET" finished-at="2019-10-02T15:36:48 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Project3333]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BD_ValidateCreationOfNewAlignmentProjectDB -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateCreationOfAlignmentProjectDB@536aaa8d]" name="getResult" is-config="true" duration-ms="2" started-at="2019-10-01T10:26:10 EET" finished-at="2019-10-01T10:26:10 EET">
+        </test-method> <!-- BD_ValidateLaunchWebsite -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="getResult" is-config="true" duration-ms="2" started-at="2019-10-02T15:36:48 EET" finished-at="2019-10-02T15:36:48 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=BD_ValidateCreationOfNewAlignmentProjectDB status=SUCCESS method=ValidateCreationOfAlignmentProjectDB.BD_ValidateCreationOfNewAlignmentProjectDB(java.lang.String)[pri:0, instance:test.ValidateCreationOfAlignmentProjectDB@536aaa8d] output={null}]]]>
+                <![CDATA[[TestResult name=BD_ValidateLaunchWebsite status=SUCCESS method=ValidateLoginAndLaunch.BD_ValidateLaunchWebsite(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-      </class> <!-- test.ValidateCreationOfAlignmentProjectDB -->
+        <test-method status="PASS" signature="BD_LoginSuccessfully(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="BD_LoginSuccessfully" duration-ms="46440" started-at="2019-10-02T15:36:48 EET" finished-at="2019-10-02T15:37:35 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BD_LoginSuccessfully -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-10-02T15:37:35 EET" finished-at="2019-10-02T15:37:35 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BD_LoginSuccessfully status=SUCCESS method=ValidateLoginAndLaunch.BD_LoginSuccessfully(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="endReport" is-config="true" duration-ms="162" started-at="2019-10-02T15:37:35 EET" finished-at="2019-10-02T15:37:35 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- test.ValidateLoginAndLaunch -->
     </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

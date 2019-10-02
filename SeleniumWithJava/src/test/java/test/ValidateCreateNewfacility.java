@@ -44,6 +44,9 @@ public class ValidateCreateNewfacility extends TestBase
         logger.log(LogStatus.INFO, validStrings.getfacilityNavigation());
         facility_1.CreateNewFacility(dataDriven.getFacilityName(), dataDriven.getFacilityID());
         logger.log(LogStatus.INFO, validStrings.getfacilitycreationStatus());
+        captureScreenshot(driver,validStrings.getFacilityscreenshotName() , new Throwable().getStackTrace()[0].getMethodName());
+        logger.log(LogStatus.INFO, validStrings.getconfirmScreenshot());
+
     }    
 
 }

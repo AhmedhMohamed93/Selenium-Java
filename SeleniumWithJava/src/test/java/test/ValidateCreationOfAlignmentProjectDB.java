@@ -35,7 +35,7 @@ public class ValidateCreationOfAlignmentProjectDB extends TestBase
     public void BD_ValidateCreationOfNewAlignmentProjectDB(String PName) throws Throwable
     {
         logger = extent.startTest(validStrings.GetStartDBValidation());
-        logger = extent.startTest(validStrings.getconnectDB());
+        logger.log(LogStatus.INFO,validStrings.getconnectDB());
         
         try 
         {
@@ -59,7 +59,7 @@ public class ValidateCreationOfAlignmentProjectDB extends TestBase
                         Assert.assertEquals(resultSet.getString(2),PName);
                     }
                 }
-                connection.close();
+                //connection.close();
                 logger.log(LogStatus.INFO,validStrings.getCloseDataBase());
             }
         } catch (Exception e) 
