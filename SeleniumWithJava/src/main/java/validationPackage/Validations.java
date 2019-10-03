@@ -40,7 +40,7 @@ public class Validations extends TestBase
 			    private String CreationStatus = "New IDN is impersonated successfully";
     
 			 /*************************************************************************************
-			  *             BD_ValidateCreationOfNewFacility() Test Log Strings               *
+			  *             BD_ValidateCreationOfNewFacility() Test Log Strings                   *
 			  *************************************************************************************/    
 			    private String FacilityScreenshot = "New Facility Created successfully";
 			    private String CreateFacilityStart = "Validation Of Create New Facility";
