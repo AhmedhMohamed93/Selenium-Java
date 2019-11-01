@@ -1,65 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="15" total="17" passed="2">
+<testng-results skipped="0" failed="0" ignored="12" total="17" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="77736" started-at="2019-10-02T15:49:38 EET" finished-at="2019-10-02T15:50:56 EET">
+  <suite name="Suite" duration-ms="424087" started-at="2019-11-02T00:36:28 EET" finished-at="2019-11-02T00:43:32 EET">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="77736" started-at="2019-10-02T15:49:38 EET" finished-at="2019-10-02T15:50:56 EET">
+    <test name="Test1" duration-ms="424087" started-at="2019-11-02T00:36:28 EET" finished-at="2019-11-02T00:43:32 EET">
       <class name="test.ValidateLoginAndLaunch">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="setupTest" is-config="true" duration-ms="84" started-at="2019-10-02T15:49:38 EET" finished-at="2019-10-02T15:49:38 EET">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="setupTest" is-config="true" duration-ms="79" started-at="2019-11-02T00:36:28 EET" finished-at="2019-11-02T00:36:28 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="BD_ValidateLaunchWebsite(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="BD_ValidateLaunchWebsite" duration-ms="28020" started-at="2019-10-02T15:49:38 EET" finished-at="2019-10-02T15:50:06 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BD_ValidateLaunchWebsite -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="getResult" is-config="true" duration-ms="1" started-at="2019-10-02T15:50:06 EET" finished-at="2019-10-02T15:50:06 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BD_ValidateLaunchWebsite status=SUCCESS method=ValidateLoginAndLaunch.BD_ValidateLaunchWebsite(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="BD_LoginSuccessfully(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="BD_LoginSuccessfully" duration-ms="49447" started-at="2019-10-02T15:50:06 EET" finished-at="2019-10-02T15:50:56 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BD_LoginSuccessfully -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-10-02T15:50:56 EET" finished-at="2019-10-02T15:50:56 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BD_LoginSuccessfully status=SUCCESS method=ValidateLoginAndLaunch.BD_LoginSuccessfully(java.lang.String)[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="endReport" is-config="true" duration-ms="159" started-at="2019-10-02T15:50:56 EET" finished-at="2019-10-02T15:50:56 EET">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:test.ValidateLoginAndLaunch@76f2b07d]" name="endReport" is-config="true" duration-ms="176" started-at="2019-11-02T00:43:32 EET" finished-at="2019-11-02T00:43:32 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- test.ValidateLoginAndLaunch -->
+      <class name="test.ValidateCreationOfAlignmentProjectDB">
+        <test-method status="PASS" signature="BD_ValidateCreationOfNewAlignmentProjectDB(java.lang.String)[pri:0, instance:test.ValidateCreationOfAlignmentProjectDB@57e1b0c]" name="BD_ValidateCreationOfNewAlignmentProjectDB" duration-ms="14669" started-at="2019-11-02T00:43:17 EET" finished-at="2019-11-02T00:43:32 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Project3333]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BD_ValidateCreationOfNewAlignmentProjectDB -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateCreationOfAlignmentProjectDB@57e1b0c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-11-02T00:43:32 EET" finished-at="2019-11-02T00:43:32 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BD_ValidateCreationOfNewAlignmentProjectDB status=SUCCESS method=ValidateCreationOfAlignmentProjectDB.BD_ValidateCreationOfNewAlignmentProjectDB(java.lang.String)[pri:0, instance:test.ValidateCreationOfAlignmentProjectDB@57e1b0c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- test.ValidateCreationOfAlignmentProjectDB -->
+      <class name="test.ValidateCreateNewPF">
+        <test-method status="PASS" signature="BD_ValidateCreationOfNewPharmacyFormualry(java.lang.String)[pri:0, instance:test.ValidateCreateNewPF@4493d195]" name="BD_ValidateCreationOfNewPharmacyFormualry" duration-ms="85052" started-at="2019-11-02T00:38:58 EET" finished-at="2019-11-02T00:40:23 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BD_ValidateCreationOfNewPharmacyFormualry -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateCreateNewPF@4493d195]" name="getResult" is-config="true" duration-ms="1" started-at="2019-11-02T00:40:23 EET" finished-at="2019-11-02T00:40:23 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BD_ValidateCreationOfNewPharmacyFormualry status=SUCCESS method=ValidateCreateNewPF.BD_ValidateCreationOfNewPharmacyFormualry(java.lang.String)[pri:0, instance:test.ValidateCreateNewPF@4493d195] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- test.ValidateCreateNewPF -->
+      <class name="test.ValidateCreateNewfacility">
+        <test-method status="PASS" signature="BD_ValidateCreationOfNewFacility(java.lang.String)[pri:0, instance:test.ValidateCreateNewfacility@6ee52dcd]" name="BD_ValidateCreationOfNewFacility" duration-ms="80602" started-at="2019-11-02T00:37:37 EET" finished-at="2019-11-02T00:38:58 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BD_ValidateCreationOfNewFacility -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateCreateNewfacility@6ee52dcd]" name="getResult" is-config="true" duration-ms="0" started-at="2019-11-02T00:38:58 EET" finished-at="2019-11-02T00:38:58 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BD_ValidateCreationOfNewFacility status=SUCCESS method=ValidateCreateNewfacility.BD_ValidateCreationOfNewFacility(java.lang.String)[pri:0, instance:test.ValidateCreateNewfacility@6ee52dcd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- test.ValidateCreateNewfacility -->
+      <class name="test.ValidateCreateAlignmentProject">
+        <test-method status="PASS" signature="BD_ValidateCreationOfNewAlignmentProject(java.lang.String)[pri:0, instance:test.ValidateCreateAlignmentProject@2781e022]" name="BD_ValidateCreationOfNewAlignmentProject" duration-ms="174117" started-at="2019-11-02T00:40:23 EET" finished-at="2019-11-02T00:43:17 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BD_ValidateCreationOfNewAlignmentProject -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateCreateAlignmentProject@2781e022]" name="getResult" is-config="true" duration-ms="0" started-at="2019-11-02T00:43:17 EET" finished-at="2019-11-02T00:43:17 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BD_ValidateCreationOfNewAlignmentProject status=SUCCESS method=ValidateCreateAlignmentProject.BD_ValidateCreationOfNewAlignmentProject(java.lang.String)[pri:0, instance:test.ValidateCreateAlignmentProject@2781e022] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- test.ValidateCreateAlignmentProject -->
+      <class name="test.ValidateCreateNewIDN">
+        <test-method status="PASS" signature="BD_ValidateCreationOfNewHealthSystem(java.lang.String)[pri:0, instance:test.ValidateCreateNewIDN@704a52ec]" name="BD_ValidateCreationOfNewHealthSystem" duration-ms="69362" started-at="2019-11-02T00:36:28 EET" finished-at="2019-11-02T00:37:37 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BD_ValidateCreationOfNewHealthSystem -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.ValidateCreateNewIDN@704a52ec]" name="getResult" is-config="true" duration-ms="2" started-at="2019-11-02T00:37:37 EET" finished-at="2019-11-02T00:37:37 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BD_ValidateCreationOfNewHealthSystem status=SUCCESS method=ValidateCreateNewIDN.BD_ValidateCreationOfNewHealthSystem(java.lang.String)[pri:0, instance:test.ValidateCreateNewIDN@704a52ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- test.ValidateCreateNewIDN -->
     </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

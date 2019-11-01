@@ -5,14 +5,30 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="test.ValidateCreationOfAlignmentProjectDB">
+      <class name="test.ValidateCreateNewPF">
         <methods>
           <include name="setupTest"/>
           <include name="endReport"/>
-          <include name="BD_ValidateCreationOfNewAlignmentProjectDB" invocation-numbers="0"/>
+          <include name="getResult"/>
+          <include name="BD_ValidateCreationOfNewPharmacyFormualry" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.ValidateCreateNewPF -->
+      <class name="test.ValidateCreateNewfacility">
+        <methods>
+          <include name="setupTest"/>
+          <include name="endReport"/>
+          <include name="BD_ValidateCreationOfNewFacility" invocation-numbers="0"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- test.ValidateCreationOfAlignmentProjectDB -->
+      </class> <!-- test.ValidateCreateNewfacility -->
+      <class name="test.ValidateCreateAlignmentProject">
+        <methods>
+          <include name="setupTest"/>
+          <include name="BD_ValidateCreationOfNewAlignmentProject" invocation-numbers="0"/>
+          <include name="endReport"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- test.ValidateCreateAlignmentProject -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

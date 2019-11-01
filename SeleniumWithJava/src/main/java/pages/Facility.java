@@ -45,8 +45,8 @@ public class Facility extends TestBase
 	private By facilityName = By.xpath("//input[@id='FacilityName']");
 	private By facilityID = By.xpath("//input[@id='FacilityUniqueId']");
 	private By SaveFacility = By.xpath("//button[@id='SaveFacilityRegion']");
-	private By facilitySearch = By.xpath("//input[@id='SearchRegionFacility']");
-	private By FacilityValidation = By.xpath("//td[2]//ng2-smart-table-cell[1]//table-cell-view-mode[1]//div[1]//div[1]");
+	private By facilitySearch = By.xpath("//input[@id='search']");
+	private By FacilityValidation = By.xpath("//td[2]//div[1]//span[1]");
 
 
     /****************************************************************************************************
@@ -161,6 +161,9 @@ public class Facility extends TestBase
     public void CreateNewFacility(String FacilityName, String FacilityID) throws Throwable
     {
     	waitUntilPageLoad();
+    	Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(newFacility)).perform();
+        waitUntilPageLoad();
         driver.findElement(newFacility).click();
         driver.findElement(facilityName).sendKeys(FacilityName);
         driver.findElement(facilityID).sendKeys(FacilityID);

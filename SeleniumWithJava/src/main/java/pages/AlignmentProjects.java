@@ -38,19 +38,19 @@ public class AlignmentProjects extends TestBase
      ****************************************************************************************************/
 
     private By Infusion = By.xpath("//a[contains(text(),'Infusion')]");
-    private By alignmentProject = By.xpath("//span[contains(text(),'Alignment Projects')]");
+    private By alignmentProject = By.xpath("//span[contains(text(),'Interoperability Projects')]");
     private By NewalignmentProjectBtn = By.xpath("//button[@id='AddAlignmentProject']");
     private By AlignmentProjectName = By.xpath("//input[@id='Name']");
-    private By EMRFormualry = By.xpath("//div[@class='col-md-5']//bddropdown[@name='autoCompleteControls[0].Name']//input[1]");
+    private By EMRFormualry = By.xpath("//div[@class='col-md-12 form-group']//bddropdown[@name='autoCompleteControls[0].Name']//input[1]");
     private By EMRSelector = By.xpath("//a[@id = 'listItemEMRFormularyList1']");
     private By Facility = By.xpath("//div[@class= 'checkbox']/label");
-    private By UploadGRE = By.xpath("//label[@class='btn btn-default']");
-    private By EMRItems = By.xpath("//div[@class='col-md-4 IvLabel']//input[1]");
+    private By UploadGRE = By.xpath("//label[@class='btn bd-btn btn-default no-margin-bottom']");
+    private By EMRItems = By.xpath("//div[@class='col-md-8 IvLabel pull-left']//input[1]");
     private By EMRItemsSelect = By.xpath("//a[@id='listItemIVTypesList2']");
-    private By UploadEMR = By.xpath("//file-uploader[@id='IvFiles Uploader']//label[@class='btn btn-default'][contains(text(),'Browse')]");
+    private By UploadEMR = By.xpath("//file-uploader[@id='IvFilesUploader']//label[@class='btn bd-btn btn-default no-margin-bottom'][contains(text(),'Browse')]");
     private By SaveAlignmentProject = By.xpath("//div[@class='col-sm-12 tab-container-header']//span[1]");
-    private By AlignmentSearch = By.xpath("//input[@id='SearchItem']");
-    private By AlignmentProjectValidation = By.xpath("//td[1]//ng2-smart-table-cell[1]//table-cell-view-mode[1]//div[1]//div[1]");
+    private By AlignmentSearch = By.xpath("//input[@id='search']");
+    private By AlignmentProjectValidation = By.xpath("//td[1]//div[1]");
     private By UploadSucessfully = By.xpath("//span[contains(text(),'File Uploaded.')]");
 
 
@@ -98,7 +98,7 @@ public class AlignmentProjects extends TestBase
 
     /****************************************************************************************************
      *                                                                                                  *
-     *   Method Name : CreateNewPharmacyAlignmentProject()                                              *
+     *   Method Name : CreateNewAlignmentProject()                                              *
      *   Inputs      : String Alignment Project Name                                                    *
      *               : String Pharmacy Formulary Name                                                   *
      *   Outputs     : Void                                                                             *
@@ -108,14 +108,17 @@ public class AlignmentProjects extends TestBase
      * @throws Throwable 																				*
      ****************************************************************************************************/
 
-    public void CreateNewPharmacyAlignmentProject(String AlignmentprojectName, String EMRformualry) throws Throwable
+    public void CreateNewAlignmentProject(String AlignmentprojectName, String EMRformualry) throws Throwable
     {
     	waitUntilPageLoad();
+    	Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(NewalignmentProjectBtn)).perform();
+        waitUntilPageLoad();
         driver.findElement(NewalignmentProjectBtn).click();
         driver.findElement(AlignmentProjectName).sendKeys(AlignmentprojectName);
         //driver.FindElement(EMRFormualry).Click();
         //Thread.Sleep(1500);
-        driver.findElement(EMRFormualry).sendKeys(EMRformualry);
+        driver.findElement(EMRFormualry).click();
         driver.findElement(EMRSelector).click();
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.elementToBeClickable(Facility));

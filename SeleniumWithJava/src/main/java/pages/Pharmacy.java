@@ -36,8 +36,8 @@ public class Pharmacy extends TestBase
 	private By associatedFacility = By.xpath("//div[@class='pharmacy-formulary-form-association-control double-margin-top double-padding-top']//input[1]");
 	private By associatedFacilityAdd = By.xpath("//div[@class='pharmacy-formulary-form-association-control double-margin-top double-padding-top']//button[@id='bdassociationcontrol1-add']");
 	private By SavePF = By.xpath("//button[@id='SaveDetailPharmacyFormulary']");
-	private By PharmacySearch = By.xpath("//input[@id='SearchItem']");
-	private By PharmacyValidation = By.xpath("//td[1]//ng2-smart-table-cell[1]//table-cell-view-mode[1]//div[1]//div[1]");
+	private By PharmacySearch = By.xpath("//input[@id='search']");
+	private By PharmacyValidation = By.xpath("//td[1]//div[1]");
 
     /****************************************************************************************************
      *                                                                                                  *
@@ -95,6 +95,9 @@ public class Pharmacy extends TestBase
     public void CreateNewPharmacyFormualry(String PFName, String PFID, String PFVendor, String FacilityName) throws Throwable
     {
     	waitUntilPageLoad();
+    	Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(NewPF)).perform();
+        waitUntilPageLoad();
         driver.findElement(NewPF).click();
         driver.findElement(PhFName).sendKeys(PFName);
         driver.findElement(PhFID).sendKeys(PFID);

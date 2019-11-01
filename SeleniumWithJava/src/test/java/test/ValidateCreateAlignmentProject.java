@@ -45,7 +45,7 @@ public class ValidateCreateAlignmentProject extends TestBase
         logger.log(LogStatus.INFO, validStrings.getImpersonate());
         project_1.NavigateToAlignmentProject();
         logger.log(LogStatus.INFO, validStrings.getAlignmentNavigation());
-        project_1.CreateNewPharmacyAlignmentProject(dataDriven.getAlignmentProjectName(), dataDriven.getPharmacyFormularyName());
+        project_1.CreateNewAlignmentProject(dataDriven.getAlignmentProjectName(), dataDriven.getPharmacyFormularyName());
         logger.log(LogStatus.INFO, validStrings.getAlignmentcreationStatus());
         captureScreenshot(driver,validStrings.getAlignmentscreenshotName() , new Throwable().getStackTrace()[0].getMethodName());
         logger.log(LogStatus.INFO, validStrings.getconfirmScreenshot());
